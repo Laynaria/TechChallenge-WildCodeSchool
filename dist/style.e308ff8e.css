@@ -1,0 +1,1045 @@
+/*Font Face*/
+@font-face {
+  font-family: "font-1";
+  src: url(/Lora-Italic.04625ce5.ttf);
+}
+
+@font-face {
+  font-family: "font-2";
+  src: url(/DancingScript-Medium.683a6092.ttf);
+}
+
+/*Decoration Body & Main*/
+body {
+  background: rgb(226, 219, 206);
+  font-family: "font-1", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  margin-top: 0px;
+  font-size: 1.2rem;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+main {
+  margin: 0% 10%;
+}
+
+/*Header and Menu*/
+header {
+  padding-bottom: 74px;
+  text-align: center;
+}
+
+#logo {
+  display: flex;
+  position: fixed;
+  width: 3.5rem;
+  margin: 2px;
+  margin-left: 2rem;
+  z-index: 1;
+}
+
+nav {
+  width: 100%;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  position: fixed;
+  right: 0px;
+  user-select: none;
+}
+
+nav ul {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  justify-content: flex-end;
+  background: rgb(54, 141, 182);
+  padding: 18px;
+  margin-top: 0px;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0rem 8rem;
+  transition: width 0.4s height 0s;
+}
+
+#Menu-Contact {
+  margin-right: 4rem;
+}
+
+nav ul li a {
+  color: rgb(226, 219, 206);
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: black;
+  /*color: rgba(255, 228, 181, 1);*/
+}
+
+/*Menu Mobile*/
+
+#mobile-icon {
+  display: block;
+  position: fixed;
+  color: rgb(226, 219, 206);
+  z-index: 2;
+  font-size: 1.25rem;
+  right: 1.25rem;
+  top: 1rem;
+  cursor: pointer;
+  visibility: hidden;
+  padding: 0px 5px 1px 5px;
+  user-select: none;
+}
+
+#mobile-icon:hover {
+  color: rgb(54, 141, 182);
+  background-color: rgb(226, 219, 206);
+}
+
+#right-nav {
+  height: 100%;
+  z-index: 1;
+  display: block;
+  position: fixed;
+  font-size: 1.25rem;
+  top: 2.5rem;
+  right: -200px;
+  visibility: hidden;
+  font-weight: 500;
+  line-height: 5;
+  user-select: none;
+}
+
+#right-nav ul {
+  list-style: none;
+  font-weight: 500;
+  background-color: rgb(54, 141, 182);
+  height: 100%;
+  padding-right: 40px;
+}
+
+#right-nav ul li a {
+  text-decoration: none;
+  color: rgb(226, 219, 206);
+}
+
+/*SECTIONS*/
+section {
+  padding: 20px;
+}
+
+/*Section Hero (Welcome)*/
+#Hero {
+  height: 500px;
+  background: url("/Welcome.7fefab7e.jpg") top/cover;
+  background-position-y: 40%;
+  padding: 0px;
+  margin-top: -6px;
+}
+
+h1 {
+  padding-top: 12rem;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+  text-transform: uppercase;
+  transition: 0.8s;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/*Section Index Content*/
+#Index-Content {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 33.64% 66.36%;
+  column-gap: 5rem;
+  row-gap: 2.5rem;
+  grid-template-areas: "i1 i2" "none i2";
+}
+
+#Main-Content {
+  grid-area: i2;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 50% 50%;
+  column-gap: 2.5rem;
+  row-gap: 2.5rem;
+}
+
+.Content-Box {
+  background-color: rgb(54, 141, 182);
+  border-color: rgba(0, 0, 0, 0.4);
+  border-style: solid;
+  border-radius: 30px;
+}
+.Content-Box img {
+  border-radius: 30px 30px 0px 0px;
+  border-bottom: solid;
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+}
+
+#Treasure {
+  grid-area: i1;
+  background-color: rgb(54, 141, 182);
+  border-color: rgba(0, 0, 0, 0.4);
+  border-style: solid;
+  border-radius: 30px;
+  user-select: none;
+}
+
+#Treasure-text {
+  padding: 25px 30px;
+}
+
+#Treasure-text p {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+#clicker-chest {
+  padding: 5px 0px 0px 0px;
+  margin-left: -15px;
+  -webkit-user-drag: none;
+}
+
+/*Section Flex Container*/
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#flex-royals {
+  margin: 0% 2%;
+  margin-bottom: 5%;
+  background-color: rgb(54, 141, 182);
+  border-color: rgba(0, 0, 0, 0.4);
+  border-style: solid;
+  border-radius: 30px;
+}
+
+.flex-container img {
+  padding-top: 5%;
+  width: 250px;
+}
+
+/*Royal Assets Table*/
+#grid-royal-assets {
+  margin-bottom: 10px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 50% 50%;
+  column-gap: 5rem;
+  row-gap: 2.5rem;
+  grid-template-areas: "r1 r2";
+}
+
+/* #royal-inventory {
+  margin-bottom: 40px;
+} */
+
+#royal-inventory,
+#javelin-event,
+#calendar-border {
+  padding-bottom: 5%;
+  border-color: rgba(0, 0, 0, 0.4);
+  border-style: solid;
+  border-radius: 30px;
+}
+
+#royal-inventory {
+  grid-area: r1;
+}
+
+#javelin-event {
+  grid-area: r2;
+}
+
+/*May The Calendar Be With You*/
+#calendar-border {
+  width: 80%;
+  padding-bottom: 2.5%;
+  margin-left: 10%;
+}
+#calendar {
+  border-color: rgb(54, 141, 182, 0.8);
+  border-style: solid none solid none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
+  grid-template-areas:
+    "csl csm csm csm csm csm csr"
+    "c1 c2 c3 c4 c5 c6 c7"
+    "s1 s2 s3 s4 s5 s6 s7"
+    "c8 c9 c10 c11 c12 c13 c14"
+    "s8 s9 s10 s11 s12 s13 s14"
+    "c15 c16 c17 c18 c19 c20 c21"
+    "s15 s16 s17 s18 s19 s20 s21"
+    "c22 c23 c24 c25 c26 c27 c28"
+    "s22 s23 s24 s25 s26 s27 s28"
+    "c29 c30 c31 cablank cablank cablank cablank"
+    "s29 s30 s31 cablank cablank cablank cablank";
+}
+
+#select-month {
+  grid-area: csm;
+  pointer-events: none;
+}
+
+#select-left {
+  grid-area: csl;
+}
+#select-right {
+  grid-area: csr;
+}
+
+#ca1 {
+  grid-area: c1;
+  pointer-events: none;
+}
+
+#sa1 {
+  grid-area: s1;
+}
+
+#ca2 {
+  grid-area: c2;
+  pointer-events: none;
+}
+
+#sa2 {
+  grid-area: s2;
+}
+
+#ca3 {
+  grid-area: c3;
+  pointer-events: none;
+}
+
+#sa3 {
+  grid-area: s3;
+}
+
+#ca4 {
+  grid-area: c4;
+  pointer-events: none;
+}
+
+#sa4 {
+  grid-area: s4;
+}
+
+#ca5 {
+  grid-area: c5;
+  pointer-events: none;
+}
+
+#sa5 {
+  grid-area: s5;
+}
+
+#ca6 {
+  grid-area: c6;
+  pointer-events: none;
+}
+
+#sa6 {
+  grid-area: s6;
+}
+
+#ca7 {
+  grid-area: c7;
+  pointer-events: none;
+}
+
+#sa7 {
+  grid-area: s7;
+}
+
+#ca8 {
+  grid-area: c8;
+  pointer-events: none;
+}
+
+#sa8 {
+  grid-area: s8;
+}
+
+#ca9 {
+  grid-area: c9;
+  pointer-events: none;
+}
+
+#sa9 {
+  grid-area: s9;
+}
+
+#ca10 {
+  grid-area: c10;
+  pointer-events: none;
+}
+
+#sa10 {
+  grid-area: s10;
+}
+
+#ca11 {
+  grid-area: c11;
+  pointer-events: none;
+}
+
+#sa11 {
+  grid-area: s11;
+}
+
+#ca12 {
+  grid-area: c12;
+  pointer-events: none;
+}
+
+#sa12 {
+  grid-area: s12;
+}
+
+#ca13 {
+  grid-area: c13;
+  pointer-events: none;
+}
+
+#sa13 {
+  grid-area: s13;
+}
+
+#ca14 {
+  grid-area: c14;
+  pointer-events: none;
+}
+
+#sa14 {
+  grid-area: s14;
+}
+
+#ca15 {
+  grid-area: c15;
+  pointer-events: none;
+}
+
+#sa15 {
+  grid-area: s15;
+}
+
+#ca16 {
+  grid-area: c16;
+  pointer-events: none;
+}
+
+#sa16 {
+  grid-area: s16;
+}
+
+#ca17 {
+  grid-area: c17;
+  pointer-events: none;
+}
+
+#sa17 {
+  grid-area: s17;
+}
+
+#ca18 {
+  grid-area: c18;
+  pointer-events: none;
+}
+
+#sa18 {
+  grid-area: s18;
+}
+
+#ca19 {
+  grid-area: c19;
+  pointer-events: none;
+}
+
+#sa19 {
+  grid-area: s19;
+}
+
+#ca20 {
+  grid-area: c20;
+  pointer-events: none;
+}
+
+#sa20 {
+  grid-area: s20;
+}
+
+#ca21 {
+  grid-area: c21;
+  pointer-events: none;
+}
+
+#sa21 {
+  grid-area: s21;
+}
+
+#ca22 {
+  grid-area: c22;
+  pointer-events: none;
+}
+
+#sa22 {
+  grid-area: s22;
+}
+
+#ca23 {
+  grid-area: c23;
+  pointer-events: none;
+}
+
+#sa23 {
+  grid-area: s23;
+}
+
+#ca24 {
+  grid-area: c24;
+  pointer-events: none;
+}
+
+#sa24 {
+  grid-area: s24;
+}
+
+#ca25 {
+  grid-area: c25;
+  pointer-events: none;
+}
+
+#sa25 {
+  grid-area: s25;
+}
+
+#ca26 {
+  grid-area: c26;
+  pointer-events: none;
+}
+
+#sa26 {
+  grid-area: s26;
+}
+
+#ca27 {
+  grid-area: c27;
+  pointer-events: none;
+}
+
+#sa27 {
+  grid-area: s27;
+}
+
+#ca28 {
+  grid-area: c28;
+  pointer-events: none;
+}
+
+#sa28 {
+  grid-area: s28;
+}
+
+#ca29 {
+  grid-area: c29;
+  pointer-events: none;
+}
+
+#sa29 {
+  grid-area: s29;
+}
+
+#ca30 {
+  grid-area: c30;
+  pointer-events: none;
+}
+
+#sa30 {
+  grid-area: s30;
+}
+
+#ca31 {
+  grid-area: c31;
+  pointer-events: none;
+}
+
+#sa31 {
+  grid-area: s31;
+}
+
+input[type="button"] {
+  background: rgb(54, 141, 182);
+  color: white;
+  border-color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#ca-blank {
+  background: rgb(226, 219, 206);
+  border-color: rgb(226, 219, 206);
+  border: none;
+  grid-area: cablank;
+  cursor: initial;
+  pointer-events: none;
+}
+
+#sa1,
+#sa2,
+#sa3,
+#sa4,
+#sa5,
+#sa6,
+#sa7,
+#sa8,
+#sa9,
+#sa10,
+#sa11,
+#sa12,
+#sa13,
+#sa14,
+#sa15,
+#sa16,
+#sa17,
+#sa18,
+#sa19,
+#sa20,
+#sa21,
+#sa22,
+#sa23,
+#sa24,
+#sa25,
+#sa26,
+#sa27,
+#sa28,
+#sa29,
+#sa30,
+#sa31 {
+  background: rgb(226, 219, 206);
+  cursor: initial;
+  pointer-events: none;
+  color: black;
+  font-weight: bold;
+}
+
+/*Contact Form*/
+#contact {
+  display: grid;
+  grid-template-columns: 25% 25% 10% 40%;
+  grid-template-rows: 15% 85%;
+  grid-template-areas: "h p blank2 c" "h blank blank2 c";
+}
+
+#Hermes {
+  grid-area: h;
+}
+
+#blank2 {
+  grid-area: blank2;
+}
+
+#blank {
+  grid-area: blank2;
+}
+
+#contact-form {
+  grid-area: c;
+}
+
+#p-hermes {
+  grid-area: p;
+  border-radius: 300px 300px 300px 30px;
+  border-style: solid;
+  border-color: rgb(54, 141, 182, 0.8);
+  background-color: rgb(226, 219, 206, 0.8);
+  padding: 5px;
+}
+
+form {
+  padding-top: 230px;
+  transition: 0.8s;
+}
+
+label {
+  line-height: 2;
+  transition: 0.8s;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  resize: none;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background: rgb(54, 141, 182);
+  color: white;
+  border-color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"] {
+  text-align: center;
+}
+
+/*Footer*/
+footer {
+  display: grid;
+  align-items: center;
+  margin: 0px -8px;
+}
+
+footer h3 {
+  font-size: 1.4rem;
+  background: rgb(54, 141, 182);
+  padding: 15px 15px;
+  text-transform: capitalize;
+}
+
+footer a {
+  text-decoration: none;
+  text-transform: none;
+  color: rgb(226, 219, 206);
+}
+
+footer a:hover {
+  color: black;
+}
+
+@media screen and (max-width: 1500px) {
+  nav ul li {
+    margin: 0rem 6rem;
+    transition: width 0.4s height 0s;
+  }
+
+  #Menu-Contact {
+    margin-right: 3rem;
+  }
+
+  h1 {
+    padding-top: 11.62rem;
+  }
+}
+
+@media screen and (max-width: 1415px) {
+  #grid-royal-assets {
+    margin-bottom: 10px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    column-gap: 5rem;
+    grid-template-areas: "r1" "r2";
+  }
+
+  #calendar-border {
+    margin-top: 2.5rem;
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  #contact {
+    grid-template-columns: 30% 50% 20%;
+    grid-template-rows: 15% 85%;
+    grid-template-areas: "h p blank" "h c blank";
+  }
+
+  form {
+    padding-top: 142px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  nav ul li {
+    margin: 0rem 4rem;
+    transition: width 0.4s height 0s;
+  }
+
+  #Menu-Contact {
+    margin-right: 2rem;
+  }
+
+  #Index-Content {
+    grid-template-columns: 50% 50%;
+  }
+
+  #Main-Content {
+    grid-template-columns: 100%;
+  }
+
+  .flex-container {
+    display: grid;
+    justify-content: initial;
+  }
+  #calendar {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
+    grid-template-areas:
+      "csl csm csm csm csr"
+      "c1 c2 c3 c4 c5"
+      "s1 s2 s3 s4 s5"
+      "c6 c7 c8 c9 c10"
+      "s6 s7 s8 s9 s10"
+      "c11 c12 c13 c14 c15"
+      "s11 s12 s13 s14 s15"
+      "c16 c17 c18 c19 c20"
+      "s16 s17 s18 s19 s20"
+      "c21 c22 c23 c24 c25"
+      "s21 s22 s23 s24 s25"
+      "c26 c27 c28 c29 c30"
+      "s26 s27 s28 s29 s30"
+      "c31 cablank cablank cablank cablank "
+      "s31 cablank cablank cablank cablank ";
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  nav ul li {
+    margin: 0rem 2rem;
+    transition: width 0.4s height 0s;
+  }
+
+  #Menu-Contact {
+    margin-right: 1rem;
+  }
+
+  #contact {
+    grid-template-columns: 15% 70% 15%;
+  }
+
+  #contact label {
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(54, 141, 182, 0.8);
+    background-color: rgb(226, 219, 206, 0.8);
+  }
+  #calendar {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
+    grid-template-areas:
+      "csl csm csr"
+      "c1 c2 c3"
+      "s1 s2 s3"
+      "c4 c5 c6"
+      "s4 s5 s6"
+      "c7 c8 c9"
+      "s7 s8 s9"
+      "c10 c11 c12"
+      "s10 s11 s12"
+      "c13 c14 c15"
+      "s13 s14 s15"
+      "c16 c17 c18"
+      "s16 s17 s18"
+      "c19 c20 c21"
+      "s19 s20 s21"
+      "c22 c23 c24"
+      "s22 s23 s24"
+      "c25 c26 c27"
+      "s25 s26 s27"
+      "c28 c29 c30"
+      "s28 s29 s30"
+      "c31 cablank cablank"
+      "s31 cablank cablank";
+  }
+}
+
+@media screen and (max-width: 840px) {
+  nav ul li {
+    margin: 0rem 1rem;
+    transition: width 0.4s height 0s;
+  }
+
+  #mobile-icon,
+  #right-nav {
+    visibility: hidden;
+    transition: 0s;
+  }
+  #Index-Content {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "i2" "i1";
+  }
+
+  #Menu-Contact {
+    margin-right: 0.5rem;
+  }
+
+  #Index-Content {
+    display: block;
+  }
+
+  #Treasure {
+    margin-top: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  nav ul li {
+    transition: width 0.4s height 0s;
+    visibility: hidden;
+    font-size: 1.25rem;
+  }
+
+  #mobile-icon,
+  #right-nav {
+    visibility: visible;
+    transition: 0s;
+  }
+
+  #calendar-border {
+    width: 130%;
+    padding-bottom: 2.5%;
+    margin-left: -15%;
+    padding-bottom: 10%;
+  }
+
+  #calendar {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
+    grid-template-areas:
+      "csl csm csr"
+      "c1 c2 c3"
+      "s1 s2 s3"
+      "c4 c5 c6"
+      "s4 s5 s6"
+      "c7 c8 c9"
+      "s7 s8 s9"
+      "c10 c11 c12"
+      "s10 s11 s12"
+      "c13 c14 c15"
+      "s13 s14 s15"
+      "c16 c17 c18"
+      "s16 s17 s18"
+      "c19 c20 c21"
+      "s19 s20 s21"
+      "c22 c23 c24"
+      "s22 s23 s24"
+      "c25 c26 c27"
+      "s25 s26 s27"
+      "c28 c29 c30"
+      "s28 s29 s30"
+      "c31 cablank cablank"
+      "s31 cablank cablank";
+  }
+  #calendar-border {
+    margin-top: 0rem;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  #grid-royal-assets {
+    margin-bottom: 40px;
+    grid-template-rows: 46% 52%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  #grid-royal-assets {
+    margin-bottom: 40px;
+    grid-template-rows: 42.5% 57.5%;
+  }
+}
+
+@media screen and (max-width: 646px) {
+  nav ul li {
+    margin-bottom: -24px;
+  }
+
+  #right-nav {
+    top: 2.6rem;
+  }
+
+  #contact {
+    grid-template-columns: 10% 80% 10%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  nav ul li {
+    margin-bottom: -24px;
+  }
+
+  #contact {
+    grid-template-columns: 5% 90% 5%;
+  }
+}
+
+/* --------------------------------------
+Treasure Coins
+-------------------------------------- */
+
+.gold-coin-a {
+  background-image: url(/Gold1.67ad6298.png);
+}
+
+.gold-coin-b {
+  background-image: url(/Gold2.167681de.png);
+}
+
+.gold-coin-c {
+  background-image: url(/Gold3.1ea3dee2.png);
+}
+
+.gold-coin-d {
+  background-image: url(/Logo.f6c07087.png);
+}
+
+.gold-coin-e {
+  background-image: url(/Idyia.dacd4b3f.png);
+}
+
+.gold-coin-f {
+  background-image: url(/Madeas.de96e9b1.png);
+}
+
+.gold-coin-a,
+.gold-coin-b,
+.gold-coin-c,
+.gold-coin-d,
+.gold-coin-e,
+.gold-coin-f {
+  position: absolute;
+  opacity: 1;
+  animation: anim 8s forwards;
+  background-size: cover;
+  user-select: none;
+  pointer-events: none;
+}
+/*
+.bubble {
+  position: absolute;
+  border-radius: 300px;
+  border-style: solid;
+  border-color: rgb(77, 157, 194);
+  background: rgb(77, 157, 194, 0.1);
+  opacity: 0;
+  animation: anim 8s forwards;
+  filter: hue-rotation(0deg);
+}*/
+
+@keyframes anim {
+  to {
+    top: var(--top);
+    left: var(--left);
+    opacity: 0.6;
+  }
+}
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
